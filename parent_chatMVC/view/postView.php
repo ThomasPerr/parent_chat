@@ -1,12 +1,9 @@
 <?php $title = 'Mon bloc - Billet'; ?>
 
 <?php ob_start(); ?>
- <h1><?php echo $data['title'];?></h1>
- 
+        <h1>Mon super blog !</h1>
+        <p><a href="./index.php">Retour à la liste communautés</a></p>
 
-
-        <p><a href="./index.php">Retour à la liste de mes communautés</a></p>
-<p>sujet du chat  :</p>
         <div class="news">
             <h3>
                 <?= htmlspecialchars($post['title']) ?>

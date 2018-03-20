@@ -11,11 +11,13 @@ while ($data = $community->fetch())
 ?>
     <div class="news">
         <h3>
-        <a href="post.php?id=<?= $data['id'] ?>">
+        
             <?= htmlspecialchars($data['title']) ?>
-            <?= htmlspecialchars($data['description']) ?> </a>
-            
+                
         </h3>
+        <p>
+        <a href="post.php?id=<?= $data['id'] ?>"><?= htmlspecialchars($data['description']) ?></a>   
+        </p>
     </div>
 <?php
 }
