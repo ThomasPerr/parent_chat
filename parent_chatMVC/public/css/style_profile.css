@@ -20,7 +20,7 @@ html, body {
 .avatar {
     width: 20vh;
     height: 20vh;
-    background-image: url('../../images/noavatar.svg');
+    background-image: url('../../Images/noavatar.svg');
     background-size: 103%;
     background-position:center;
     border-radius: 100%;   
@@ -79,7 +79,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=180, St
 .avatarenfant {
     width: 10vh;
     height: 10vh;
-    background-image: url('../../images/noavatar.svg');
+    background-image: url('../../Images/noavatar.svg');
     background-size: 103%;
     background-position:center;
     border-radius: 100%; 
