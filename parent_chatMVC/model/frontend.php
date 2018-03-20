@@ -7,6 +7,14 @@ function getPosts()
     return $req;
 }
 
+function getCommunity()
+{
+    $db = dbConnect();
+    $req = $db->query('SELECT id, title, description FROM community ORDER BY  date DESC LIMIT 0, 5');
+   
+    return $req;
+}
+
 function getPost($postId)
 {
     $db = dbConnect();
@@ -49,7 +57,7 @@ function dbConnect()
 {
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=testmvc;charset=utf8', 'root', '');
+        $db = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'fawzi');
         return $db;
     }
     catch(Exception $e)

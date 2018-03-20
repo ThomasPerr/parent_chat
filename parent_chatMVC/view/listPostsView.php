@@ -1,8 +1,13 @@
-<?php $title = 'Mon blog'; ?>
+<?php while ($data = $community->fetch())
+{
+    htmlspecialchars($data['title'])
+}
+$title = echo $data['title']; ?>
 
 <?php ob_start(); ?>
+
 <h1>Mon super blog !</h1>
-<p>Derniers billets du blog :</p>
+<p>Derniers Messages du blog :</p>
 
 
 <?php
