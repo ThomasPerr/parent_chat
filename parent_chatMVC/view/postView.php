@@ -1,7 +1,7 @@
 <?php $title = 'Mon bloc - Billet'; ?>
 
 <?php ob_start(); ?>
-        <h1>Mon super blog !</h1>
+        <h1>Les enfants d'abord !</h1>
         <p><a href="./index.php">Retour à la liste des billets</a></p>
 
         <div class="news">
@@ -23,7 +23,7 @@
         ?>
             <p><strong><?= htmlspecialchars($comment['author']) ?></strong> le <?= $comment['comment_date_fr'] ?></p>
             <p><?= nl2br(htmlspecialchars($comment['comment'])) ?></p>
-            <span><a href="view/editView.php?idEdit=<?= $comment['id'] ?>&idBillet=<?= $_GET['id']?>">Modifier</a></span>
+            <span><a href="edit.php?idComment=<?= $comment['id'] ?>">Modifier</a></span>
 
         <?php
         }

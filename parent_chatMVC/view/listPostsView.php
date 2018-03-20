@@ -1,7 +1,7 @@
 <?php $title = 'Mon blog'; ?>
 
 <?php ob_start(); ?>
-<h1>Mon super blog !</h1>
+<h1>Les enfants d'abord !</h1>
 <p>Derniers billets du blog :</p>
 
 

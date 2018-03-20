@@ -17,6 +17,16 @@ function getPost($postId)
     return $post;
 }
 
+function getComment($commentId)
+{
+    $db = dbConnect();
+    $req = $db->prepare('SELECT id, author, comment, DATE_FORMAT(comment_date, \'%d/%m/%Y à %Hh%imin%ss\') AS comment_date_fr FROM comments WHERE id = ?');
+    $req->execute(array($commentId));
+    $comment = $req->fetch();
+    
+    return $comment;
+}
+
 function getComments($postId)
 {
     $db = dbConnect();
@@ -35,11 +45,11 @@ function postComment($postId, $author, $comment)
     return $affectedLines;
 }
 
-function editComment($author, $comment)
+function editComment($idComment, $author, $comment)
 {
     $db = dbConnect();
-    $comments = $db->prepare('UPDATE comments(author, comment, comment_date) VALUES(?, ?) WHERE id="'.$idEdit.'"');
-    $affectedLines = $comments->execute(array($author, $comment));
+    $comments = $db->prepare("UPDATE comments SET author = ?, comment = ? WHERE id = ?");
+    $affectedLines = $comments->execute(array($author, $comment, $idComment));
     
     return $affectedLines;
 }
@@ -49,7 +59,7 @@ function dbConnect()
 {
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=testmvc;charset=utf8', 'root', '');
+        $db = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', '101Dalmatien@');
         return $db;
     }
     catch(Exception $e)
