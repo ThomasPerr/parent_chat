@@ -2,6 +2,13 @@
 
 require('./model/frontend.php');
 
+function listCommunity()
+{
+    $community = getCommunity();
+    
+    require('./view/listCommunityView.php');
+}
+
 function listPosts()
 {
     $posts = getPosts();

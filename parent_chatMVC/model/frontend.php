@@ -7,6 +7,14 @@ function getPosts()
     return $req;
 }
 
+function getCommunity()
+{
+    $db = dbConnect();
+    $reqc = $db->query('SELECT id, title, description FROM community ORDER BY  date DESC LIMIT 0, 10');
+   
+    return $reqc;
+}
+
 function getPost($postId)
 {
     $db = dbConnect();

@@ -1,8 +1,10 @@
-<?php $title = 'Mon bloc - Billet'; ?>
+<?php $title = 'communauté'; ?>
 
 <?php ob_start(); ?>
-        <h1>Les enfants d'abord !</h1>
-        <p><a href="./index.php">Retour à la liste des billets</a></p>
+        <h1> A modif</h1>
+       
+       
+        <p><a href="./index.php">Retour à la liste communautés</a></p>
 
         <div class="news">
             <h3>
