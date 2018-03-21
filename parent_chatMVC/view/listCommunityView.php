@@ -1,3 +1,4 @@
+
 <?php $title = 'Mon Profile'; ?>
 
 <?php ob_start(); ?>
@@ -42,10 +43,12 @@ while ($data = $community->fetch()) {
                     <td><a href="post.php?id=<?= $data['id']?>"><?= htmlspecialchars($data['description'])?></a></td>
 
                 </tr>
+
 <?php
 }
 $community->closeCursor();
 ?>
+
 
                  </tbody>
             </table>
@@ -83,6 +86,8 @@ $community->closeCursor();
         </div>
     </div>
 </div>
+
+   
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>
