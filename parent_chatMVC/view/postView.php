@@ -17,7 +17,7 @@
             </p>
         </div>
 
-        <h2>Commentaires</h2>
+        <h2>Messages</h2>
 
         <?php
         while ($comment = $comments->fetch())
@@ -25,7 +25,7 @@
         ?>
             <p><strong><?= htmlspecialchars($comment['author']) ?></strong> le <?= $comment['comment_date_fr'] ?></p>
             <p><?= nl2br(htmlspecialchars($comment['comment'])) ?></p>
-            <span><a href="edit.php?idComment=<?= $comment['id'] ?>">Modifier</a></span>
+           <span><a href="edit.php?idComment=<?= $comment['id'] ?>&idBillet=<?= $_GET['id']?>">Modifier</a></span>
 
         <?php
         }
