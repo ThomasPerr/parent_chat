@@ -11,9 +11,11 @@ if (isset($_GET['idComment']) && $_GET['idComment'] > 0) {
         
         $comment = $_POST['comment'];
         
-        editComment($idComment, $author, $comment);
+        $idPost = $_POST['idPost'];
         
-        // todo redirect to list of comments
+        editComment($idComment, $author, $comment, $idPost);
+        
+        header("Location: post.php?id=$idPost");
     }    
     else {
         $comment = getComment($_GET['idComment']);

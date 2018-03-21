@@ -67,7 +67,9 @@ function dbConnect()
 {
     try
     {
-        $db = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'svroot');
+
+        $db = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'fawzi');
+
         return $db;
     }
     catch(Exception $e)

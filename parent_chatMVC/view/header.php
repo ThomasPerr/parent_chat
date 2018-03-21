@@ -10,7 +10,7 @@
 		<img src="./images/logo_colibri.png" class="logo_colibri">
 		<ul>
 			<li><a href="#">Accueil</a></li>
-			<li><a href="#">Profil</a></li>
+			<li><a href="http://localhost/parent_chat/parent_chatMVC/">Profil</a></li>
 			<li><a href="#">Communauté</a></li>
 			<li><a href="#">Contact</a></li>
 		</ul>
