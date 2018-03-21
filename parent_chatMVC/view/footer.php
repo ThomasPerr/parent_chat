@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="footer">
-		<img src="./Images/facebook-logo.png" class="facebook-logo inline">
+		<img src="./images/facebook-logo.png" class="facebook-logo inline">
 		<h1 class="inline"><a href="#">Mentions légales</a></h1>
 	</div>
 </body>

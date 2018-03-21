@@ -7,7 +7,7 @@
 </head>
 <body>
 	<header>
-		<img src="./Images/logo_colibri.png" class="logo_colibri">
+		<img src="./images/logo_colibri.png" class="logo_colibri">
 		<ul>
 			<li><a href="#">Accueil</a></li>
 			<li><a href="#">Profil</a></li>
