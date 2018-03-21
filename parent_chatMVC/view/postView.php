@@ -1,7 +1,9 @@
-<?php $title = 'Mon bloc - Billet'; ?>
+<?php $title = 'communauté'; ?>
 
 <?php ob_start(); ?>
-        <h1>Mon super blog !</h1>
+        <h1> A modif</h1>
+       
+       
         <p><a href="./index.php">Retour à la liste communautés</a></p>
 
         <div class="news">
