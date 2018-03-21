@@ -4,12 +4,16 @@
        <meta charset="UTF-8">
        <title><?= $title ?></title>
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-       <link rel="stylesheet" href="./public/css/style.css">
+        <link href="./public/css/style_header.css" rel="stylesheet" /> 
+        <link href="./public/css/style_footer.css" rel="stylesheet" />
+       <link rel="stylesheet" href="./public/css/style_profile.css">
+       <link rel="stylesheet" href="./public/css/style_message.css">
+       <link rel="stylesheet" href="./public/css/style_edit.css">
    </head>
        
    <body>
-       <?= include "header.php"; ?>
+       <?php include "header.php"; ?>
        <?= $content ?>
-       <?= include "footer.php"; ?>
+       <?php include "footer.php"; ?>
    </body>
 </html>
